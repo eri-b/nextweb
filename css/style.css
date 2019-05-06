@@ -17,11 +17,62 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 
 
 /* Layout */
-main{}
-.top-content{display:flex; height:50vh;}
-.top-content > div:first-child{flex:2; background:green;}
-.top-content > div:last-child{flex:1; background:pink; display:flex; flex-direction: column;}
-.top-content > div:last-child > div{border:1px solid black; flex:1;}
+
+.top-content{display:flex; height:65vh; padding:10px;}
+.top-content > div:first-child{
+	flex:2;
+	background: url('../images/topleft.png');
+	background-size: cover;
+	background-position: center center;
+}
+.top-content > div:last-child{
+	flex:1; 
+	display:flex; 
+	flex-direction: column;
+	margin-left:10px;
+}
+.top-content > div:last-child > div{
+	flex:1;
+}
+.top-content > div:last-child > div:first-child{
+	background: url('../images/topright.png');
+	background-size: cover;
+	background-position: center center;
+	margin-bottom:10px;
+}
+.top-content > div:last-child > div:last-child{
+	background: url('../images/bottomright.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.top-content .cover{
+	 display:block;
+	 width:100%;
+	 height:100%;
+	 position:relative;
+	transition:.4s; 
+}
+.top-content .cover.red{
+	background-image: linear-gradient(to bottom right, rgba(255,0,0,.5),rgba(0,0,0,.5));
+	
+}
+
+.top-content .cover:hover{
+	opacity:.8;
+}
+
+.top-content .cover.normal{
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.8));
+}
+
+.top-content .cover > div{ position:absolute; bottom:20px; left:20px; }
+
+.top-content h1{color:white; font-size: 58px; line-height:1.1em;}
+.top-content h2{color:white; font-size: 28px; line-height:1.1em;}
+.top-content p:first-of-type{color:white; text-transform: uppercase;}
+.top-content p:last-of-type{color:#ccc; }
+
 
 
 .canvas {max-width: 1192px; margin: 0 auto;}
