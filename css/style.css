@@ -2,7 +2,7 @@
 
 body{}
 a{text-decoration: none; color:inherit;}
-
+section{margin:5vh 0;}
 
 /* Nav Styling */
 .top-nav li, .sticky li{display:inline-block;}
@@ -22,15 +22,18 @@ main{}
 .top-content > div:last-child > div{border:1px solid black; flex:1;}
 
 
-.canvas {display: flex; max-width: 1192px; justify-content: center; margin: 0 auto;}
+.canvas {max-width: 1192px; margin: 0 auto;}
 
-.latest-news {display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
-.latest-news > div {width: 25%; min-height: 175px; border: 2px solid black; padding: 20px; box-sizing: border-box;}
-.latest-news > div h1 {font-weight: bold; font-size: 2em; word-wrap: break-word;}
+.grid4{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
+.grid4 > div{width: 25%; box-sizing: border-box; border: 2px solid black; }
+
+.latest-news > div {padding: 20px; }
+.latest-news > div h1 {font-weight: bold; font-size: 2em; /*word-wrap: break-word;*/}
 .latest-news > div img {max-width: 100%;}
 
 
-
+.grid3{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
+.grid3 > div{width: 33%; box-sizing: border-box; border: 2px solid black; }
 
 
 
@@ -45,8 +48,11 @@ main{}
 /* Mobile */
 
 @media screen and (max-width: 1024px) {
-	.latest-news {justify-content: left;}
-	.latest-news > div {width: 33.33%;}
+	.grid4 {justify-content: left;}
+	.grid4 > div {width: 33.33%;}
+
+	.grid3 {justify-content: left;}
+	.grid3 > div {width: 50%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -56,7 +62,14 @@ main{}
 	.top-content > div:last-child{flex:0; display:block;}
 	.top-content > div:last-child > div{flex:0; height:30vh; border:1px solid red;}
 
-	.latest-news {flex-direction: column;}
-	.latest-news > div {width: 100%; flex-direction: row;}
-	.latest-news > div img {float: left; width: 25%;}
+	.grid4 {flex-direction: column;}
+	.grid4 > div {width: 100%; flex-direction: row;}
+
+	.latest-news > div img {float: left; width: 100px}
+	.latest-news > div h1{padding-left: 125px; font-size:1em;}
+	.latest-news > div p{padding-left: 125px;}
+
+	.grid3 {flex-direction: column;}
+	.grid3 > div {width: 100%;}
+
 }
