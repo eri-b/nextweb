@@ -35,7 +35,14 @@ main{}
 .grid3{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
 .grid3 > div{width: 33%; box-sizing: border-box; border: 2px solid black; }
 
-
+.funding {background-color: #fffaf8;}
+.funding-head {background-color: pink;}
+.funding-head > h1 {background-color: red; color: white; font-weight: bold; font-size: 20px; padding: 5px 0;}
+.funding-head > h2 {padding-top: 10px;}
+.funding-head > p {padding-bottom: 10px;}
+.funding-head > img {position: absolute;}
+.funding h2 {font-weight: bold;}
+.funding-cont{background-color: rgb(255, 227, 232);}
 
 
 
