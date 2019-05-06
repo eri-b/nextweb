@@ -34,8 +34,8 @@ main{}
 .latest-news > div img {max-width: 100%;}
 .latest-news p{color:#555; margin-top:10px;}
 
-.grid3{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
-.grid3 > div{width: 33%; box-sizing: border-box; border: 2px solid black; }
+.grid3{display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between;}
+.grid3 > div{width: 33%; box-sizing: border-box}
 
 
 .funding-head {background-color: pink; position:relative;}
@@ -59,10 +59,45 @@ main{}
 	font-size:.9em;
 }
 
+.latest ul li {
+	margin: 14px; 
+	font-size: 14px; 
+	color: rgb(153, 153, 153); 
+	line-height: 18px;
+	 border-bottom: 1px solid rgba(201, 201, 201, 0.767); 
+	 padding-bottom: 10px;}
 
+.latest ul li::before {
+	content: "\2022";
+	color: red;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+  }
 
+.latest h3, .latest p {color: red; background-color: rgba(255,68,34,.08); padding: 0 15px;}
+.latest h3 {font-weight: bold; padding-bottom: 15px}
+.latest > div > p {color: red; background-color: rgba(255,68,34,.08); padding-top: 15px;}
+.latest > div > div > p {
+	font-size: 14px;
+}
 
+.latest > div > div {
+	background-image: url("../images/ios3.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 200px;
+}
 
+.latest > div > div > h2 {
+	font-size: 18px;
+}
+
+.latest > div > div > p, .latest > div > div > h2{
+	color: white;
+}
 
 
 
