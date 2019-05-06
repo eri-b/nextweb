@@ -1,8 +1,10 @@
 /* CSS here */
 
-body{}
+body{font-family: 'Roboto', sans-serif; font-size:16px;}
 a{text-decoration: none; color:inherit;}
 section{margin:5vh 0;}
+h1{font-weight:700; font-size:24px; margin:5px 0;}
+h2{font-weight:700; font-size:18px; margin:5px 0;}
 
 /* Nav Styling */
 .top-nav li, .sticky li{display:inline-block;}
@@ -11,7 +13,7 @@ section{margin:5vh 0;}
 .top-nav{background:#333; color:white;}
 .main-nav{background:white; color:#777;}
 .message{background:yellow; padding:10px;}
-.sticky{position:sticky; top:0; width:100%;}
+.sticky{position:sticky; top:0; width:100%; z-index:2;}
 
 
 /* Layout */
@@ -24,25 +26,38 @@ main{}
 
 .canvas {max-width: 1192px; margin: 0 auto;}
 
-.grid4{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
-.grid4 > div{width: 25%; box-sizing: border-box; border: 2px solid black; }
+.grid4{display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between;}
+.grid4 > div{width: 23%; box-sizing: border-box; margin-bottom:20px;}
 
-.latest-news > div {padding: 20px; }
+.latest-news > div {}
 .latest-news > div h1 {font-weight: bold; font-size: 2em; /*word-wrap: break-word;*/}
 .latest-news > div img {max-width: 100%;}
-
+.latest-news p{color:#555; margin-top:10px;}
 
 .grid3{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
 .grid3 > div{width: 33%; box-sizing: border-box; border: 2px solid black; }
 
-.funding {background-color: #fffaf8;}
-.funding-head {background-color: pink;}
-.funding-head > h1 {background-color: red; color: white; font-weight: bold; font-size: 20px; padding: 5px 0;}
-.funding-head > h2 {padding-top: 10px;}
-.funding-head > p {padding-bottom: 10px;}
-.funding-head > img {position: absolute;}
+
+.funding-head {background-color: pink; position:relative;}
+.funding-head > h1 {
+	background-color: #f42; 
+	padding:15px 0;
+	padding-left:80px; 
+	color: white; 
+	font-weight: bold; 
+	font-size: 20px; 
+	}
+.funding-head > h2 {padding-top: 10px;padding-left:80px;  }
+.funding-head > p {padding-bottom: 10px; padding-left:80px; color:#999; font-size:.8em;}
+.funding-head > img {position: absolute;width:60px; left:10px; top:15px;}
 .funding h2 {font-weight: bold;}
-.funding-cont{background-color: rgb(255, 227, 232);}
+.funding-cont{
+	background-color: rgba(255,68,34,.08); 
+	padding:20px 15px;
+	color:#555;
+	line-height:18px;
+	font-size:.9em;
+}
 
 
 
@@ -55,11 +70,13 @@ main{}
 /* Mobile */
 
 @media screen and (max-width: 1024px) {
-	.grid4 {justify-content: left;}
-	.grid4 > div {width: 33.33%;}
+	.grid4 {justify-content: space-around;}
+	.grid4 > div {width: 31%;}
 
 	.grid3 {justify-content: left;}
 	.grid3 > div {width: 50%;}
+
+	.funding > div:nth-child(4){display:none;}
 }
 
 @media screen and (max-width: 600px) {
