@@ -1,0 +1,45 @@
+/* CSS here */
+
+body{}
+a{text-decoration: none; color:inherit;}
+
+
+/* Nav Styling */
+.top-nav li, .sticky li{display:inline-block;}
+.top-nav li a{padding:10px 20px; display:inline-block;}
+.main-nav li a{padding:15px 20px; display:inline-block;}
+.top-nav{background:#333; color:white;}
+.main-nav{background:white; color:#777;}
+.message{background:yellow; padding:10px;}
+.sticky{position:sticky; top:0; width:100%;}
+
+
+/* Layout */
+main{}
+.top-content{display:flex; height:50vh;}
+.top-content > div:first-child{flex:2; background:green;}
+.top-content > div:last-child{flex:1; background:pink; display:flex; flex-direction: column;}
+.top-content > div:last-child > div{border:1px solid black; flex:1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+	.top-content{flex-direction:column; background:red; height:auto;}
+  	
+  	.top-content > div:first-child{flex:0; height:30vh;}
+	.top-content > div:last-child{flex:0; display:block;}
+	.top-content > div:last-child > div{flex:0; height:30vh; border:1px solid red;}
+}
