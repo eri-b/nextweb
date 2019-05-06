@@ -126,7 +126,7 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	width: 1em;
   }
 
-.latest h3, .latest p {color: red; background-color: rgba(255,68,34,.08); padding: 0 15px;}
+.latest h3, .latest > p, .latest > div > p {color: red; background-color: rgba(255,68,34,.08); padding: 0 15px;}
 .latest h3 {font-weight: bold; padding-bottom: 15px}
 .latest > div > p {color: red; background-color: rgba(255,68,34,.08); padding-top: 15px;}
 .latest > div > div > p {
@@ -150,6 +150,27 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	color: white;
 }
 
+.latest > div > div > div {
+	text-align: left;
+	position: absolute;
+	color: white;
+	bottom: 10px;
+	left: 10px;
+  }
+
+  .latest > div > div > div > p:last-of-type {
+	  color: rgb(209, 209, 209);
+	  font-size: 12px;
+  }
+
+  .latest a {
+	  background-image: url("../images/topright.png");
+	  background-position: center;
+	  background-size: cover;
+	  float: right;
+	  height: 80px;
+	  width: 80px;
+  }
 
 
 
