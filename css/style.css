@@ -22,6 +22,14 @@ main{}
 .top-content > div:last-child > div{border:1px solid black; flex:1;}
 
 
+.canvas {display: flex; max-width: 1192px; justify-content: center; margin: 0 auto;}
+
+.latest-news {display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
+.latest-news > div {width: 25%; min-height: 175px; border: 2px solid black; padding: 20px; box-sizing: border-box;}
+.latest-news > div h1 {font-weight: bold; font-size: 2em; word-wrap: break-word;}
+.latest-news > div img {max-width: 100%;}
+
+
 
 
 
@@ -36,10 +44,19 @@ main{}
 
 /* Mobile */
 
+@media screen and (max-width: 1024px) {
+	.latest-news {justify-content: left;}
+	.latest-news > div {width: 33.33%;}
+}
+
 @media screen and (max-width: 600px) {
 	.top-content{flex-direction:column; background:red; height:auto;}
   	
   	.top-content > div:first-child{flex:0; height:30vh;}
 	.top-content > div:last-child{flex:0; display:block;}
 	.top-content > div:last-child > div{flex:0; height:30vh; border:1px solid red;}
+
+	.latest-news {flex-direction: column;}
+	.latest-news > div {width: 100%; flex-direction: row;}
+	.latest-news > div img {float: left; width: 25%;}
 }
