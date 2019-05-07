@@ -3,7 +3,13 @@
 body{font-family: 'Roboto', sans-serif; font-size:16px;}
 a{text-decoration: none; color:inherit;}
 section{margin:5vh 0;}
-h1{font-weight:700; font-size:24px; margin:5px 0;}
+h1{
+	font-weight:700; 
+	font-size:24px; 
+	margin:5px 0;
+	margin-bottom:10px;
+	color:red;
+}
 h2{font-weight:700; font-size:18px; margin:5px 0;}
 
 /* Nav Styling */
@@ -86,7 +92,7 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 .latest-news p{color:#555; margin-top:10px;}
 
 .grid3{display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between;}
-.grid3 > div{width: 32%; box-sizing: border-box}
+.grid3 > div{width: 32%; box-sizing: border-box; margin-bottom:30px;}
 
 
 .funding-head {background-color: pink; position:relative;}
@@ -110,10 +116,7 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	font-size:.9em;
 }
 
-.latest h1{
-	margin-bottom:10px;
-	color:red;
-}
+
 .latest ul li {
 	margin: 14px; 
 	font-size: 14px; 
@@ -237,6 +240,7 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	color: #555;
 }
 
+.mobile-nav{display:none;}
 
 /* Mobile */
 
@@ -244,8 +248,8 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	.grid4 {justify-content: space-around;}
 	.grid4 > div {width: 31%;}
 
-	.grid3 {justify-content: left;}
-	.grid3 > div {width: 50%;}
+	.grid3{justify-content: space-around;}
+	.grid3 > div {width: 48%; }
 
 	.top-content h1{font-size:18px;}
 	.top-content h2{font-size:18px;}
@@ -261,13 +265,30 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	.top-content > div:last-child > div{flex:0; height:30vh; }
 
 	.grid4 {flex-direction: column;}
-	.grid4 > div {width: 100%; flex-direction: row;}
+	.grid4 > div {width: 100%; position:relative;}
 
-	.latest-news > div img {float: left; width: 100px}
-	.latest-news > div h1{padding-left: 125px; font-size:1em;}
-	.latest-news > div p{padding-left: 125px;}
+	.latest-news > div img {position:absolute; width: 100px}
+	.latest-news > div h2{padding-left: 125px; font-size:1em;}
+	.latest-news > div p{padding-left: 125px; margin-top:5px;}
 
 	.grid3 {flex-direction: column;}
 	.grid3 > div {width: 100%;}
+
+	.message{font-size:.8em;}
+
+	.canvas{padding:10px;}
+	.top-nav{display:none;}
+	.main-nav ul{display:none;}
+	.mobile-nav{display:flex; align-items:center;}
+	
+	.mobile-nav > div:first-child{
+		background:red;
+		padding:10px;
+	}
+	.mobile-nav > div:nth-child(1){flex:2;}
+	.mobile-nav > div:nth-child(2){flex:5;}
+	.mobile-nav > div:nth-child(3){flex:1;}
+	.mobile-nav > div:nth-child(4){flex:1;}
+	.mobile-nav img{width:70px;}
 
 }
