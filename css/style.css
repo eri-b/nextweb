@@ -195,6 +195,47 @@ h2{font-weight:700; font-size:18px; margin:5px 0;}
 	  font-size: 12px;
   }
 
+  footer {
+	text-align: center;
+  }
+
+  .footer-top {
+	background-color:black;
+
+  }
+
+  .footer-social-links {
+	  padding: 50px 0;
+  }
+
+  .footer-social-links a {
+	  background: #333;
+	  border: 2px solid #333;
+	  padding: 10px;
+	  border-radius: 50%;
+	  color: white;
+	  margin: 0 5px;
+  }
+
+  .footer-social-links a:hover {
+	  background: rgb(82, 81, 81);
+	  border: 2px solid #333;
+	  cursor: pointer;
+  }
+
+  .footer-links li{
+	display: inline-block;
+	color: white;
+	padding: 10px 10px 20px 10px;
+	color: #777;
+	font-size: 14px;
+  }
+
+.footer-bottom {
+	background: black;
+	padding: 50px;
+	color: #555;
+}
 
 
 /* Mobile */
