@@ -1,3 +1,5 @@
-# nextweb
+# The Next Web
 
-Next Web Clone
+A responsive clone of The Next Web.
+
+Built by Eric and Marcos
